@@ -1,3 +1,4 @@
+import androidx.compose.foundation.clickable
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -12,6 +13,8 @@ fun ProjetoLink(
 ){
     Text(
         text = text,
+        modifier = modifier
+            .clickable(onClick = onClick),
         style = MaterialTheme.typography.titleSmall,
         color = MaterialTheme.colorScheme.primary,
         textAlign = TextAlign.Center
